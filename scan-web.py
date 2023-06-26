@@ -1,4 +1,4 @@
-###############8
+###############
 import requests
 import time
 import urllib3
@@ -53,35 +53,34 @@ def main():
    
             elif requisicao.status_code == 203:
                 print(requisicao.url+"\033[1;31m[=>]\033[1;34m"+"\033[1;39m"+str(requisicao.status_code)+"\033[1;39m")
-                os.system("termux-tts-speak -r 0.8 requisição 203")
+            
 
             elif requisicao.status_code == 401:
                 print(requisicao.url+"\033[1;31m[=>]\033[1;34m"+"\033[1;31m"+str(requisicao.status_code)+"\033[1;31m")
-                os.system("termux-tts-speak -r 0.8 requisição 401")
+            
 
             elif requisicao.status_code == 405:
                 print(requisicao.url+"\033[1;31m[=>]\033[1;34m"+"\033[1;31m"+str(requisicao.status_code)+"\033[1;31m")
-                os.system("termux-tts-speak -r 0.8 requisição 405")
+
     
             elif requisicao.status_code == 403:
                 print(requisicao.url+"\033[1;31m[=>]\033[1;34m"+"\033[1;31m"+str(requisicao.status_code)+"\033[1;31m")
-                os.system("termux-tts-speak -r 0.8 requisição 403")
 
             elif requisicao.status_code == 301:
                 print(requisicao.url+"\033[1;31m[=>]\033[1;34m"+"\033[1;35m"+str(requisicao.status_code)+"\033[1;35m")
-                os.system("termux-tts-speak -r 0.8 requisição 301")
+
 
             elif requisicao.status_code == 302:
-                os.system("termux-tts-speak -r 0.8 requisição 302")
+                
                 print(requisicao.url+"\033[1;31m[=>]\033[1;34m"+"\033[1;35m"+str(requisicao.status_code)+"\033[1;35m")
 
             elif requisicao.status_code == 307:
                 print(f+requisicao.url+"\033[1;31m[=>]\033[1;34m"+"\033[1;35m"+str(requisicao.status_code)+"\033[1;35m")
-                os.system("termux-tts-speak -r 0.8 requisição 307")
+                
 
             elif requisicao.status_code == 308:
                 print(f+requisicao.url+"\033[1;31m[=>]\033[1;34m"+"\033[1;35m"+str(requisicao.status_code)+"\033[1;35m")
-                os.system("termux-tts-speak -r 0.8 requisição 308")
+                
 
         print(f"APERTOU: CTRL+C sair")
     except KeyboardInterrupt:
