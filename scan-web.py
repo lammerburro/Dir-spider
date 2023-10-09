@@ -1,4 +1,3 @@
-###############
 import requests
 import time
 import urllib3
@@ -41,7 +40,6 @@ def main():
         web = input(f'\033[1;33m>>> ')
         print(f"digite uma wordlist ou default:/pas.txt/")
         ar = input(f"{r}[{g}DIR-SPIDER{r}]{a}•••••{r}>>> ")
-        os.system("termux-tts-speak -r 0.8 iniciando dir spider")
         os.system("mpv scifi.mp3")
         arquivo = open(ar,"r")
         for d in arquivo:
